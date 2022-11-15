@@ -166,6 +166,12 @@ variable "schemas_skip" {
   type        = list(string)
 }
 
+variable "java_opts" {
+  description = "Custom Java Options"
+  default     = ""
+  type        = string
+}
+
 # --- Iglu Resolver
 
 variable "default_iglu_resolvers" {
