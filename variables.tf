@@ -166,6 +166,12 @@ variable "schemas_skip" {
   type        = list(string)
 }
 
+variable "extra_user_data" {
+  description = "Extra user data to run"
+  default     = ""
+  type        = string
+}
+
 # --- Iglu Resolver
 
 variable "default_iglu_resolvers" {
