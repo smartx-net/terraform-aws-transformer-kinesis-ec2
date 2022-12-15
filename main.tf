@@ -417,7 +417,7 @@ resource "aws_launch_configuration" "lc" {
 }
 
 module "tags" {
-  source  = "https://github.com/smartx-net/terraform-aws-tags.git?ref=provider-tags"
+  source  = "git::https://github.com/smartx-net/terraform-aws-tags.git?ref=provider-tags"
 
   tags = local.tags
 }
