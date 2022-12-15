@@ -372,6 +372,8 @@ locals {
     iglu_resolver = local.iglu_resolver
     version       = local.app_version
 
+    extra_user_data = var.extra_user_data
+
     java_opts     = var.java_opts
 
     telemetry_script = join("", module.telemetry.*.amazon_linux_2_user_data)
