@@ -19,6 +19,24 @@ variable "instance_type" {
   default     = "t3.micro"
 }
 
+variable "spot_price" {
+  description = "The maximum price to use for reserving spot instances. (Optional, use on demand instances if not set)"
+  default     = ""
+  type        = string
+}
+
+variable "min_size" {
+  description = "The minimum number of servers in this server-group"
+  default     = 1
+  type        = number
+}
+
+variable "max_size" {
+  description = "The maximum number of servers in this server-group"
+  default     = 1
+  type        = number
+}
+
 variable "associate_public_ip_address" {
   description = "Whether to assign a public ip address to this instance"
   type        = bool
