@@ -20,7 +20,7 @@ variable "instance_type" {
 }
 
 variable "spot_price" {
-  description = "The maximum price to use for reserving spot instances. (Optional; Default: On-demand price)"
+  description = "The maximum price to use for reserving spot instances. (Optional, use on demand instances if not set)"
   default     = ""
   type        = string
 }
